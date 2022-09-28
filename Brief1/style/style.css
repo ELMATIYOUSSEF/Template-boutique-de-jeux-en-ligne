@@ -1,0 +1,8 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+p,h1{
+    font-family: Arial, Helvetica, sans-serif;
+   background-color: #eeeae4;
+}
