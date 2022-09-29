@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none
+}
+/****/
+section{
+    position: relative;
+}
+/****/
+.head{
+    display: flex;
+}
+/****/
+nav , a{
+margin-left: 30px;
+margin-top: 30px;
+}
+/****/
+.pages{
+    position: relative;
+    top: 20px;
+    padding-right: 8px;
+}
+/****/
+.title ,p{
+    position: relative;
+    top: 30px ;
+}
+/****/
+.produits{
+    display: flex;
+    position:relative ;
+    top: 40px;
+}
+/****/
+.produit{
+    padding: 20px;
+    border: solid 1px #000;
+    margin: 2px;
+    border-radius: 10px;
+}
+/****/
+h5{
+    color: limegreen;
+}
+/****/
+h3{
+    color: darkgray;
+}
