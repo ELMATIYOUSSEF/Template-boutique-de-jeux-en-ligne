@@ -4,6 +4,7 @@
     box-sizing: border-box;
     text-decoration: none
 }
+
 /****/
 section{
     position: relative;
@@ -11,12 +12,21 @@ section{
 /****/
 .head{
     display: flex;
+    position: absolute;
+    top: 0px;
+    left: 140px;
 }
 /****/
 nav , a{
 margin-left: 30px;
 margin-top: 30px;
 }
+a:hover{
+    padding: 10px;
+    border-radius: 30%;
+    background-color: lightblue;
+    transition-property: background-color;
+    transition-duration: 4s;}
 /****/
 .pages{
     position: relative;
@@ -33,6 +43,8 @@ margin-top: 30px;
     display: flex;
     position:relative ;
     top: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 /****/
 .produit{
@@ -49,3 +61,56 @@ h5{
 h3{
     color: darkgray;
 }
+footer{
+    position: relative;
+    top: 60px;
+}
+.copy {
+    position: absolute;
+    top: 90px;
+    color: black;
+    left: 530px;
+}
+.profil{
+    width: 70px;
+    border-radius: 50%;
+    position: absolute;
+    left: 600px;
+}
+@media screen and (max-width: 500px) {
+    .head{
+        display: flex;
+        position: relative;
+        top:10px;
+        left: 0;
+    }
+    .pages{
+        left: 30px;
+    }
+    .title{
+        position: relative;
+        top: 30px ;
+        left: 100px;
+        padding: 20px;
+    }
+    .logo{
+        position: relative;
+        width: 150px;
+        left: 170px;
+    }
+    .produits{
+        top: 70px;
+    }
+    .sct2{
+        position: relative;
+        top: 30px;
+    }
+    .profil{
+        left: 200px;
+        top: 30px;
+    }
+    .copy{
+        top: 120px;
+        left: 130px;
+    }
+  }
