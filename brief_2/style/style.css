@@ -44,14 +44,19 @@ a:hover{
     position:relative ;
     top: 40px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 /****/
 .produit{
     padding: 20px;
     border: solid 1px #000;
     margin: 2px;
+    margin-top: 10px;
+    
+}
+.produit :hover{
     border-radius: 10px;
+    box-shadow: 10px 1px 50px 4px black;
 }
 /****/
 h5{
@@ -63,19 +68,18 @@ h3{
 }
 footer{
     position: relative;
-    top: 60px;
+    top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .copy {
-    position: absolute;
-    top: 90px;
     color: black;
-    left: 530px;
 }
 .profil{
     width: 70px;
     border-radius: 50%;
-    position: absolute;
-    left: 600px;
 }
 @media screen and (max-width: 500px) {
     .head{
@@ -114,3 +118,46 @@ footer{
         left: 130px;
     }
   }
+  @media screen and (max-width: 700px) {
+    .head{
+        display: flex;
+        position: relative;
+        top:10px;
+        left: 0;
+    }
+    .pages{
+        left: 30px;
+    }
+    .title{
+        position: relative;
+        top: 30px ;
+        left: 100px;
+        padding: 20px;
+    }
+    .logo{
+        position: relative;
+        width: 150px;
+        left: 170px;
+    }
+    .produits{
+        top: 70px;
+        width: 100%;
+    }
+    .sct2{
+        position: relative;
+        top: 30px;
+    }
+    .profil{
+        left: 200px;
+        top: 30px;
+    }
+    .copy{
+        top: 120px;
+        left: 130px;
+    }
+  }
+@media print {
+    .section1{
+        display: none;
+    }
+}
